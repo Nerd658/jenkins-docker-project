@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { any } // La correction est ici !
 
     stages {
         stage('Construction de l\'image Docker') {
@@ -14,4 +14,4 @@ pipeline {
             }
         }
     }
-}wall
+}
